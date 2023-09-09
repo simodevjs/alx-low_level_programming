@@ -1,177 +1,33 @@
 #include <stdio.h> 
+  
  /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
+  * main - Entry point 
   * 
   * Return: Always 0 (Success) 
   */ 
+  
  int main(void) 
  { 
-         int i; 
+         char star = 'a'; 
+         char end = 'z'; 
+         char cont; 
   
-         for (i = 97; i < 123; i++) 
+         for (cont = star; cont <= end; cont++) 
          { 
-                 if (i != 101 && i != 113) 
+                 if (cont == 'e') 
                  { 
-                         putchar(i); 
+                         cont++; 
                  } 
-         } 
-         putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
+                 else if (cont == 'q') 
+                 { 
+                         cont++; 
+                 } 
   
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
+                 putchar(cont); 
          } 
-         putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
   
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
          putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
   
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
-         putchar('\n'); 
          return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
   
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
-         putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
-  
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
-         putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
-  
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
-         putchar('\n'); 
-         return (0); 
- }#include <stdio.h> 
- /** 
-  * main - Entry Point Of THe Programme. 
-  * 
-  * Description: Prints alphabets in lowercase, except the letter "q" 
-  * and "e" 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
- int main(void) 
- { 
-         int i; 
-  
-         for (i = 97; i < 123; i++) 
-         { 
-                 if (i != 101 && i != 113) 
-                 { 
-                         putchar(i); 
-                 } 
-         } 
-         putchar('\n'); 
-         return (0); 
  }
