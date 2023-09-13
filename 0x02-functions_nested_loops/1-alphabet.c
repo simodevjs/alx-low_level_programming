@@ -1,21 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - function prints alphabet using _putchar
- *
- * Description: Function prints alphabets
- *
- * Return: void
+ * print_alphabet -  the alphabet, in lowercase, followed by a new line
+ * alphabet a - z
  */
 void print_alphabet(void)
 {
-	char c = 97;
+	int alph;
 
-	while (c <= 122)
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(alph);
 	}
 	_putchar('\n');
 }
-
