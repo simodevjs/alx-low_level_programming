@@ -8,13 +8,10 @@
  */
 int main(void)
 {
-	int n;
+	int n, last;
 
-	/* Generate random number */
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-        int last; 
 	
 	last = n % 10;
 
