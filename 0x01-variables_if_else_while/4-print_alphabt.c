@@ -1,33 +1,24 @@
-#include <stdio.h> 
-  
- /** 
-  * main - Entry point 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
-  
- int main(void) 
- { 
-         char star = 'a'; 
-         char end = 'z'; 
-         char cont; 
-  
-         for (cont = star; cont <= end; cont++) 
-         { 
-                 if (cont == 'e') 
-                 { 
-                         cont++; 
-                 } 
-                 else if (cont == 'q') 
-                 { 
-                         cont++; 
-                 } 
-  
-                 putchar(cont); 
-         } 
-  
-         putchar('\n'); 
-  
-         return (0); 
-  
- }
+#include <stdio.h>
+/**
+ *main - edededed
+ *
+ *Return:dejnedn
+ */
+int main(void)
+{
+        char chark[] = "abcdefghigklmnopqrstuvwxyz";
+        int i;
+
+        for (i = 0;i <26 ; i++)
+        {
+                if ( chark[i] == 'e' || chark[i] == 'q' )
+                {
+                        continue;
+                }
+                else
+                putchar(chark[i]);
+        }
+
+	putchar('\n');
+        return (0);
+}
