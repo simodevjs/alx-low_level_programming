@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-        char chark[] = "abcdefghigklmnopqrstuvwxyz";
-        int i;
+	char chark[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-        for (i = 0;i <26 ; i++)
-        {
-                if ( chark[i] == 'e' || chark[i] == 'q' )
-                {
-                        continue;
-                }
-                else
-                putchar(chark[i]);
-        }
+	for (i = 0; i < 26 ; i++)
+	{
+		if (chark[i] == 'e' || chark[i] == 'q')
+		{
+			continue;
+		}
+		else
+		putchar(chark[i]);
+	}
 
 	putchar('\n');
-        return (0);
+	return (0);
 }
