@@ -1,35 +1,35 @@
-#include<stdio.h> 
- /** 
-  * main - Entry point 
-  * 
-  * Description: program prints possible combinations of two two-digit numbers 
-  * 
-  * Return: always 0 (success) 
-  */ 
- int main(void) 
- { 
-         int n, m; 
-  
-         for (n = 0; n <= 99; n++) 
-         { 
-                 for (m = n; m <= 99; m++) 
-                 { 
-                         if (n != m) 
-                         { 
-                                 putchar(((n / 10) % 10 + 48)); 
-                                 putchar(n % 10 + 48); 
-                                 putchar(' '); 
-                                 putchar(((m / 10) % 10 + 48)); 
-                                 putchar(m % 10 + 48); 
-  
-                                 if (n != 98 || m != 99) 
-                                 { 
-                                         putchar(','); 
-                                         putchar(' '); 
-                                 } 
-                         } 
-                 } 
-         } 
-         putchar('\n'); 
-         return (0); 
- }
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	int a;
+	int b;
+
+	for (a = 0; a < 100; a++)
+	{
+		for (b = 0; b < 100; b++)
+		{
+			if (a < b)
+			{
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
+				putchar(' ');
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+
+				if (a != 98 || b != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
