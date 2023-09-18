@@ -6,18 +6,17 @@
  */
 int main(void)
 {
-	char ll[] = "0123456789";
 	int i;
 	int j;
 
-	for (i = 0; i < 9 ; i++)
+	for (i = 48; i < 57 ; i++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (j = i+1; j < 58; j++)
 		{
-			putchar(ll[i]);
-			putchar(ll[j]);
+			putchar(i);
+			putchar(j);
 
-			if (ll[i] != '8')
+			if (i != 56)
 			putchar(',');
 			putchar(' ');
 		}
