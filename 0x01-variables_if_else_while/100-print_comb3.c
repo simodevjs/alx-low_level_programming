@@ -1,33 +1,28 @@
-#include <stdio.h> 
-  
- /** 
-  * main - Entry point 
-  * 
-  * Return: Always 0 (Success) 
-  */ 
-  
- int main(void) 
- { 
-         int a; 
-         int b; 
-  
-         for (a = 48; a <= 56; a++) 
-         { 
-                 for (b = 49; b <= 57; b++) 
-                 { 
-                         if (b > a) 
-                         { 
-                                 putchar(a); 
-                                 putchar(b); 
-                                 if (a != 56 || b != 57) 
-                                 { 
-                                         putchar(','); 
-                                         putchar(' '); 
-                                 } 
-                         } 
-                 } 
-         } 
-         putchar('\n'); 
-  
-         return (0); 
- }
+#include <stdio.h>
+/**
+ *main - de,de,de
+ *
+ *Return: endiedied
+ */
+int main(void)
+{
+	char ll[] = "0123456789";
+	int i;
+	int j;
+
+	for (i = 0; i < 9 ; i++)
+	{
+		for (j = i + 1; j < 10; j++)
+		{
+			putchar(ll[i]);
+			putchar(ll[j]);
+
+			if (ll[i] != '8')
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
+	putchar('\n');
+	return (0);
+}
