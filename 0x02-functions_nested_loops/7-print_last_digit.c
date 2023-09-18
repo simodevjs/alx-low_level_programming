@@ -5,7 +5,7 @@
  *
  * @n: takes number input
  *
- * Return 0 semry 
+ * Return: efed semry
 */
 int print_last_digit(int n)
 {
