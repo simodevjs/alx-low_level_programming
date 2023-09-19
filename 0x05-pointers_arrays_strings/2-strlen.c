@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
- * _strlen - length of a given string
- * @s: the string
- * Return: the length of given string
+ * _strlen - returns the length
+ * @s: thr input
+ * Return: the length
  */
-unsigned int _strlen(char *s)
+
+int _strlen(char *s)
 {
-	unsigned int len = 0;
+	int leng = 0;
 
-	while (s[len])
-		len++;
+	while (*s != '\0')
+	{
+		leng++;
+		s++;
+	}
 
-	return (len);
+	return (leng);
 }
