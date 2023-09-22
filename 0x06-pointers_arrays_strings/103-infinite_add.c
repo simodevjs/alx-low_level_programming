@@ -1,93 +1,54 @@
 #include "main.h"
 
-int _strlen(const char *str);
-int getcharval(const char *s, int idx);
-void reverse_str(char *str, int len);
-
 /**
- * infinite_add - add 2 numbers together from two strings
- * @n1: 1st string
- * @n2: 2nd string
- * @r: pointer to buffer
+ * infinite_add - adds two umbers
+ * @n1: first number
+ * @n2: second number
+ * @r: result
  * @size_r: buffer size
- * Return: total
+ * Return:or 0 r
+ * owned by: SmoxHAkim
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i, w_n1 = _strlen(n1), w_n2 = _strlen(n2), sum, carry;
+	int u, v, w, x, y, z;
 
-	if (w_n1 >= size_r || w_n2 >= size_r)
+	for (u = 0; n1[u]; u++)
+		;
+	for (v = 0; n2[v]; v++)
+		;
+	if (u > size_r || v > size_r)
 		return (0);
 
-	for (i = 0; i < w_n1 || i < w_n2; i++)
+	y = 0;
+	for (u -= 1, v -= 1, w = 0; w < size_r - 1; u--, v--, w++)
 	{
-		char cn1 = getcharval(n1, i);
-		char cn2 = getcharval(n2, i);
-
-		sum = cn1 + cn2 + carry;
-		carry = 0;
-		if (sum > 9)
+		z = y;
+		if (u >= 0)
 		{
-			carry = 1;
-			sum -= 10;
+			z += n1[u] - '0';
 		}
-		r[i] = sum + 48;
+		if (v >= 0)
+		{
+			z += n2[v] - '0';
+		}
+		if (u < 0 && v < 0 && z == 0)
+		{
+			break;
+		}
+		y = z / 10;
+		r[w] = z % 10 + '0';
 	}
-
-	if (carry)
-		r[i++] = carry + 48;
-	if (i >= size_r)
-		return (0);
-
-	r[i] = '\0';
-
-	reverse_str(r, _strlen(r));
-
-	return (r);
-}
-
-/**
- * _strlen - Self explain
- * @str: the string
- * Return: (int) the length
- **/
-int _strlen(const char *str)
-{
-	int len = 0;
-
-	while (str[len])
-		len++;
-
-	return (len);
-}
-
-/**
- * getcharval - Self explain
- * @s: the string
- * @idx: index of char in string
- * Return: (int) value of char in ascii
- **/
-int getcharval(const char *s, int idx)
-{
-	if (idx < _strlen(s))
-		return (s[_strlen(s) - idx - 1] - 48);
-	return (0);
-}
-
-/**
- * reverse_str - Self explain
- * @str: the string
- * @len: lenght of the given string
- **/
-void reverse_str(char *str, int len)
-{
-	int i = 0;
-
-	for (i = 0; i < len / 2; i++)
+	r[w] = '\0';
+	if (u >= 0 || v >= 0 || y)
 	{
-		char t = str[i];
-
-		str[i] = str[len - i - 1];
-		str[len - i - 1] = t;
+		return (0);
 	}
+	for (w -= 1, x = 0; x < w; w--, x++)
+	{
+		y = r[w];
+		r[w] = r[x];
+		r[x] = y;
+	}
+	return (r);
 }
