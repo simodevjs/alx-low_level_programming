@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * more_numbers - jdnede;
- * print_to_14 - prints numbers [0-14]
- * Return: dzidizdzd
+ * more_numbers - print the numbers from 0 to 14
+ *
  */
+
 void more_numbers(void)
 {
-	int m = 0;
-	int n;
+	int a;
+	int cont;
 
-	for (m = 0; m < 14 ; m++)
+	for (cont = 0; cont < 10; cont++)
 	{
-		n = 0;
-
-		while (n <= 14)
+		for (a = 0; a <= 14; a++)
 		{
-			if (n > 10)
-				_putchar(n / 10 + 48);
-			_putchar(n % 10 + 48);
-			n++;
+			if (a > 9)
+			{
+				_putchar('1');
+			}
+				_putchar(a % 10 + '0');
 		}
-		_putchar('\n');
+
+	_putchar('\n');
+
 	}
 }
