@@ -5,13 +5,14 @@
  */
 void print_numbers(void)
 {
-	int i = 48;
+	int ZERO_IN_ASCII = 48;
+	const int NINE_IN_ASCII = 57;
 
-	while (i <= 57)
+	while (ZERO_IN_ASCII <= NINE_IN_ASCII)
 	{
-		putchar(i);
-		i++;
+		_putchar(ZERO_IN_ASCII);
+		ZERO_IN_ASCII++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
